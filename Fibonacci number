@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Fibonacci{
+public static void main(String[] args)
+ { Scanner sc = new Scanner(System.in);
+
+   int a = 0;
+   int b = 1;
+   System.out.println(" Hey user enter the number you wanna to check the Fibonacci of : ");
+   int n = sc.nextInt();
+  
+
+  for (int i = 0; i<=n ; i++)
+  {
+    a = b ;
+    b = c ;
+   int c = a + b;
+   
+   System.out.println(a);
+  } 
+      
+
+ }
+
+
+}
