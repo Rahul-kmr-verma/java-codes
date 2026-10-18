@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Strong{
+public static void main(String[] args)
+ { Scanner sc = new Scanner (System.in);
+   int num = sc.nextInt();
+  int result = getsum(num);
+    if (result == num)
+  { System.out.println("The Number " + result + " is a strong Number");
+   } else {
+ System.out.println("Not a Strong Number");
+   }
+ }
+ public static int getsum(int num)
+ {
+  int ditto = num;
+  int lastdigit = 0;
+  int sum = 0;
+  while (ditto!=0)
+  { lastdigit = ditto%10;
+    sum = sum + Factorial(lastdigit);
+     ditto = ditto / 10;
+    }  
+     return sum;
+    
+  }
+  public static int Factorial(int lastdigit)
+  { int mul = 1;
+
+   for (int i = 1; i<=lastdigit; i++)
+   { 
+     mul = mul *i;
+   }
+     return mul;
+  }
+
+}
